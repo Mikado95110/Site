@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThermoPro Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0a1f44;
+      color: #ffffff;
+    }
+    header {
+      background-color: #081a3a;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #0d254f;
+      padding: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00bfff;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #00bfff;
+    }
+    .services img, .contact img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .calendar iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #081a3a;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ThermoPro Services</h1>
+    <p>Expert en plomberie & chauffage — Fiabilité, rapidité, efficacité</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#rdv">Prendre RDV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="accueil">
+    <h2>Bienvenue chez ThermoPro</h2>
+    <p>Nous intervenons rapidement pour tous vos besoins en plomberie, chauffage, dépannage et installation. Basés en Île-de-France, nous garantissons un service professionnel et personnalisé.</p>
+    <img src="https://images.unsplash.com/photo-1581579185169-1b4c6a6f3f3e?auto=format&fit=crop&w=1000&q=80" alt="Plombier en action" />
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>🔧 Dépannage plomberie 24h/24</li>
+      <li>🔥 Installation de chaudières et radiateurs</li>
+      <li>🚿 Rénovation de salle de bain</li>
+      <li>🧰 Entretien annuel de chauffage</li>
+      <li>💧 Recherche de fuites et réparation</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=1000&q=80" alt="Outils de plomberie" />
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Avec plus de 15 ans d’expérience, ThermoPro Services est dirigé par Hakim, artisan plombier chauffagiste certifié. Passionné par son métier, il met un point d’honneur à offrir un travail soigné et durable.</p>
+  </section>
+
+  <section id="rdv" class="calendar">
+    <h2>Prendre Rendez-vous</h2>
+    <p>Choisissez un créneau directement via notre calendrier en ligne :</p>
+    <iframe src="https://calendly.com/votre-nom-utilisateur" title="Calendrier de RDV"></iframe>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📍 Adresse : 12 rue des artisans, 95110 Sannois<br />
+       📞 Téléphone : 06 12 34 56 78<br />
+       📧 Email : contact@thermopro.fr</p>
+    <form>
+      <label for="nom">Nom :</label><br />
+      <input type="text" id="nom" name="nom" required /><br /><br />
+      <label for="email">Email :</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="message">Message :</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <button type="submit">Envoyer</button>
+    </form>
+    <img src="https://images.unsplash.com/photo-1581091870622-1e7b1b1b1b1b?auto=format&fit=crop&w=1000&q=80" alt="Contact client" />
+  </section>
+
+  <footer>
+    &copy; 2025 ThermoPro Services — Tous droits réservés
+  </footer>
+
+</body>
+</html>
